@@ -20,8 +20,15 @@
 			[
 				"name" => 'jquery.js', 
 				"type" => 'js',
-				"path" => 'https://code.jquery.com/jquery-3.3.1.min.js',
-				"version" => '3.3.1',
+				"path" => 'https://code.jquery.com/jquery-3.6.3.min.js',
+				"version" => '3.6.3',
+				"loadInFooter" => false
+			],
+			[
+				"name" => 'html2canvas.js', 
+				"type" => 'js',
+				"path" => 'https://html2canvas.hertzen.com/dist/html2canvas.min.js',
+				"version" => '1.0.0',
 				"loadInFooter" => false
 			],
 			[

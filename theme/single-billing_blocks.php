@@ -6,7 +6,7 @@
 ?>
     <div class="billing-block">
         <div class="inner">
-            <div class="billing-block-container">
+            <div id="billing-block-container" class="billing-block-container">
                 <?php foreach($lines as $line){
                     ?>
                         <div class="line-item">
@@ -30,6 +30,28 @@
                     <?php 
                 }?>
             </div>
+           
         </div>
     </div>
+    <div id="previewImg">
+
+    </div>
+    <script>
+        $(document).ready(function(){
+            console.log(document);
+            html2canvas(document.getElementById("billing-block-container"),{
+                backgroundColor: null
+            }).then(function(canvas) {
+                console.log(canvas);
+                var anchorTag = document.createElement("a");
+                document.getElementById("previewImg").appendChild(anchorTag);
+                document.getElementById("previewImg").appendChild(canvas);
+                anchorTag.download = "filename.png";
+                anchorTag.href = canvas.toDataURL('image/png');
+                anchorTag.innerHTML = "Download";
+                anchorTag.target = '_blank';
+            });
+        })  
+    </script>
 <?php get_footer()?>
+
