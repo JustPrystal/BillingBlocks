@@ -14,7 +14,16 @@
             min-height:350px;
             .line-item{
                 display:flex;
-
+                justify-content: center;
+                align-items: flex-end;
+                .text-item{
+                    white-space: nowrap;
+                    font-family:'steelfish';
+                    &.sbt{
+                        font-size:40px;
+                    }
+                    
+                }
             }
         }
     }

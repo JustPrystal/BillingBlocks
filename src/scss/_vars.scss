@@ -1,6 +1,10 @@
 /* @import must be at top of file, otherwise CSS will not work */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@font-face {
+    font-family: "steelfish";
+    src: url('./fonts/steelfishrg.otf');
+  }
 // Breakpoints Structure
 $custom-breakpoints: (
     xs: (minSize: 0px, maxSize: 575px, maxContWidth: 0px, name: 'XS'),
