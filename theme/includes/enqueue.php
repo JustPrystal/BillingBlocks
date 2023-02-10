@@ -5,6 +5,27 @@
 		$templatedir = get_template_directory_uri();
 		$enqueList = [	
 			[
+				"name" => 'dom-to-image.js', 
+				"type" => 'js',
+				"path" => $templatedir . '/js/dom-to-image.js',
+				"version" => '1.0.0',
+				"loadInFooter" => false
+			],
+			[
+				"name" => 'html2canvas.js', 
+				"type" => 'js',
+				"path" => $templatedir . '/js/html2canvas.js',
+				"version" => '1.0.0',
+				"loadInFooter" => false
+			],
+			[
+				"name" => 'canvas2svg.js', 
+				"type" => 'js',
+				"path" => $templatedir . '/js/canvas2svg.js',
+				"version" => '1.0.0',
+				"loadInFooter" => false
+			],
+			[
 				"name" => 'FontAwesome.css', 
 				"type" => 'css',
 				"path" => 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
@@ -14,7 +35,7 @@
 				"name" => 'style.css', 
 				"type" => 'css',
 				"path" => $templatedir . '/style.css',
-				"version" => filemtime(get_theme_file_path('/style.css'))
+				"version" => "1.0.0"
 			],
 			
 			[

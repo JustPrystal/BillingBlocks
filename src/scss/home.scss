@@ -1,0 +1,54 @@
+
+.home{
+    .bg{
+        position: absolute;
+        z-index: -1;
+        height: 100vh;
+        opacity: 0.3;
+        overflow: hidden;
+    }
+    .bg img{
+        object-fit: cover;
+        width: 100%;
+    }
+    .heading-box{
+        display: flex;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+        justify-content: center;
+        .heading{
+            position: relative;
+            font-family: 'montserrat';
+            font-size: 80px;
+            letter-spacing: -5px;
+            color: #1980CA;
+            padding-top: 30px;
+            text-shadow: 0px 0px 5px #06273f;
+            &:after{
+                position: absolute;
+                content: "To convert it into an Image.";
+                color: #0a3c61;
+                font-size: 18px;
+                letter-spacing: 10px;
+                line-height: 0;
+                right: 0;
+                bottom: 10px;
+                letter-spacing: -1px;
+                font-weight: 400;
+                text-shadow: 1px 1px 2px #0a3452;
+            }
+        }
+    }
+    .newpost-options{
+        max-width: 1400px;
+        margin: 0 auto;
+        .acf-form{
+            margin-top: 50px;
+            width: 100%;
+            .acf-fields{
+                box-shadow: 0 0 15px -7px #06273f;
+            }
+        }
+    }
+}

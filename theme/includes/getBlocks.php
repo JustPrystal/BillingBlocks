@@ -20,6 +20,9 @@
             case 'fullwidth_text':
               include 'blocks/fullwidth_text.php';
               break;
+            case 'home':
+              include 'blocks/home.php';
+              break;
             
           }
         }

@@ -44,9 +44,9 @@
         },
         {
             "key": "field_63d9a9a0904d4",
-            "label": "Color",
+            "label": "Color (hex only)",
             "name": "color",
-            "type": "color_picker",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -55,7 +55,11 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": ""
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "#",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_63d9a9ee904d6",
@@ -80,7 +84,7 @@
         },
         {
             "key": "field_63d9a9f9904d7",
-            "label": "Letter Spacing",
+            "label": "Word Spacing",
             "name": "letter_spacing",
             "type": "number",
             "instructions": "",
@@ -504,5 +508,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1675290926
+    "modified": 1675973679
 }
